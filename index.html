@@ -1,0 +1,310 @@
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, 그리고 Bootstrap 기여자들">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Grid Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.kr/docs/5.1/examples/grid/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="grid.css" rel="stylesheet">
+  </head>
+  <body class="py-4">
+    
+<main>
+  <div class="container">
+  	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Web page</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled"></a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        
+        
+      </form>
+    </div>
+  </div>
+</nav>
+	<p>     </p>
+    <h1>정지호의 웹페이지</h1>
+    <p class="lead">이 페이지는 AI,데이터 트랙을 수강하는 기계공학부 정지호의 자기소개 페이지입니다.</p>
+    <p> - 수익창출 용도가 아닙니다. 정말 단순한 과제/개인 연습용 페이지입니다(AI,데이터 트랙 2주차 과제용). </p>
+    <hr class="my-4">
+	<button type="button" class="btn btn-info">Info</button>
+    <h2 class="mt-4">- 기본정보</h2>
+    <p> </p>
+
+    <div class="row mb-2">
+      <div class="col-4 themed-grid-col">* 이름</div>
+      <div class="col-4 themed-grid-col">* 나이</div>
+      <div class="col-4 themed-grid-col">* 학과</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-sm-4 themed-grid-col">: 정지호</div>
+      <div class="col-sm-4 themed-grid-col">: 25(98년생)</div>
+      <div class="col-sm-4 themed-grid-col">: 기계공학부</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-4 themed-grid-col"></div>
+      <div class="col-md-4 themed-grid-col"></div>
+      <div class="col-md-4 themed-grid-col"></div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-lg-4 themed-grid-col">* 성별</div>
+      <div class="col-lg-4 themed-grid-col">* 가족관계</div>
+      <div class="col-lg-4 themed-grid-col">* 학년</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-xl-4 themed-grid-col">: 남</div>
+      <div class="col-xl-4 themed-grid-col">: 2녀1남 중 막내</div>
+      <div class="col-xl-4 themed-grid-col">: 4학년</div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-xxl-4 themed-grid-col"></div>
+      <div class="col-xxl-4 themed-grid-col"></div>
+      <div class="col-xxl-4 themed-grid-col"></div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-xxl-4 themed-grid-col">* 현재 본가</div>
+      <div class="col-xxl-4 themed-grid-col">* 고향</div>
+      <div class="col-xxl-4 themed-grid-col"></div>
+    </div>
+
+     <div class="row mb-3">
+      <div class="col-xxl-4 themed-grid-col">: 서울</div>
+      <div class="col-xxl-4 themed-grid-col">: 진해</div>
+     </div> 
+     <hr class="my-4">
+    <h2 class="mt-4">- 출신/거쳐간 곳들</h2>
+    <p><strong>아버지가 해군 장교셔서 이사를 많이 다녔습니다.</strong></p>
+    <div class="row">
+      <div class="col">
+      	# 진해(유치원, 초등학교~)
+      	<div class="card" style="width: 18rem;">
+  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MjNfMTky%2FMDAxNjUwNjQyODUyODEx.bOAb2F_wXDjV0uaZ9ju7hQdZJiCbOkuHf0isIWhi2Hwg.KrOSehp-ip7Fbw5PsvTWVbJtlo_Drb6S0rthScJMX9Qg.JPEG.jjingjjingprincess%2F20220402_221708.jpg&type=sc960_832" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">진해 벚꽃</h5>
+    <p class="card-text">- 출처: 네이버 블로그(문루나씨의 달콤한 모험)</p>
+    <p class="card-text">- 유치원~초등학교 2학년때까지 </p>
+  </div>
+</div>
+      </div>
+      <div class="col">
+      	# 계룡(초등학교 졸업, 중학교~)
+      	<div class="card" style="width: 18rem;">
+  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTFfMjcx%2FMDAxNjUyMjUyMTIzOTU3.gvoLN-MIJT81ur3zigXfflGx5FAuCBymGqTwtUtGdPwg.2j9i3Y8gbuh4iUlmXQAlpmHYEQ6EfvJHn85X8HxKVFMg.JPEG.bsyou61%2F%25BB%25E7%25BA%25BB_-20220506_133023%25280%2529.jpg&type=sc960_832" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">계룡산</h5>
+    <p class="card-text">- 출처: 네이버 블로그(세상살이)</p>
+    <p class="card-text">- 초등학교를 졸업하고, 중학교 1학년때까지 </p>
+    
+  </div>
+</div>
+      </div>
+      <div class="col">
+      	# 부산(중, 고등학교 졸업)
+      	<div class="card" style="width: 18rem;">
+ <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MDlfMTYg%2FMDAxNjUyMDgyMzY1NTAz.AaxR_y6a4YHu3FvAJ1IgfeSm6w3AXXw0Nxk3-r3Th8Ig.Ws7RNj5O_nPwq1ozgck6Jp17uKX7lHpCLH2_a9jY4eAg.JPEG.redwave_%2FIMG_8143.jpg&type=sc960_832" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">부산 이기대</h5>
+    <p class="card-text">- 출처: 네이버 블로그(톡톡 터지는 하루)</p>
+    <p class="card-text">- 중, 고등학교를 이곳에서 졸업했습니다. 부산에서 가장 오래 살았고, 영향을 가장 많이 받았습니다. </p>
+   
+  </div>
+</div>
+      </div>
+      <div class="col">
+      	# 서울(대학생 ~ 현재)
+      	<div class="card" style="width: 18rem;">
+ <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MjFfMjA0%2FMDAxNjU1NzY0NjU5MjM5.Yb0zKO8zlKFkzNsLTSK5tctSUV9pdBUL5OZJ3f9WeL0g.tbh5MFngC2d2DdZtjy8IMFeCwGz-QztB2SyOR01iuPEg.JPEG.blueisky12%2F1655764658723.jpg&type=sc960_832" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">서울 한강</h5>
+    <p class="card-text">- 출처: 네이버 블로그(사진과 일상)</p>
+    <p class="card-text">- 현재는 서울에 거주중입니다.</p>
+    
+  </div>
+</div>
+      </div>
+    </div>
+    <hr class="my-4">
+    <h2 class="mt-4">- 가족관계</h2>
+    <p>아버지, 어머니 그리고 누나가 둘 있습니다. 아버지는 해군 장교 출신이시고(지금은 전역하셨습니다), 어머니는 주부십니다.</p> 
+    <p>큰누나는 현재 교사이고, 작은누나는 현재 의사입니다.</p>
+ 	
+    <div class="row">
+    	<div class="col">
+    		<div class="card" style="width: 18rem;">
+  <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fg-grafolio.pstatic.net%2F20200226_280%2F1582692732975Vtghq_PNG%2Fgm_rokn_08_ipx.png%3Ftype%3Dw896_4&type=sc960_832" class="card-img-top" alt="...">
+  <div class="card-body">
+  	<p>- 출처: 그라폴리오(by 공면본부) </p>
+    
+   
+    
+  </div>
+</div>
+    	</div>
+
+    	<div class="col">
+    		<div class="card" style="width: 18rem;">
+  <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fcdn.crowdpic.net%2Fdetail-thumb%2Fthumb_d_FEA3DCD93C759CF05BCA1A6A178CBADC.png&type=sc960_832" class="card-img-top" alt="...">
+  <div class="card-body">
+  	<p>- 출처: 크라우드픽(www.crowdpic.net) </p>
+
+  </div>
+</div>
+    	</div>
+
+    	<div class="col">
+    		<div class="card" style="width: 18rem;">
+  <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fcdn.crowdpic.net%2Fdetail-thumb%2Fthumb_d_FBA3A00E81C74F2BA347F6AB17B05C4C.png&type=sc960_832" class="card-img-top" alt="...">
+  <div class="card-body">
+  	<p>- 출처: 크라우드픽(www.crowdpic.net) </p>
+
+  </div>
+</div>
+    	</div>
+    </div>
+    <hr class="my-4">
+    <h2 class="mt-4">- 군대</h2>
+    <p>해군 갑판병 출신입니다. <strong>해군사관학교를 가고 싶었는데 결국 가지 못해서, 병으로라도 지원해 보았습니다.</strong> </p>
+  	<hr class="my-4">
+
+    <h2 class="mt-4">- 취미</h2>
+    <p>         </p>
+    <p><strong>1. 먹는거</strong>.</p>
+    <div class="row">
+      <div class = "col">
+      	<p>- 먹는걸 되게 좋아합니다. 음식도 다양하게 먹는 편입니다. 매운거, 자극적인거, 느끼한거 가리질 않습니다. 가장 좋아하는 것을 굳이 뽑자면 한식을 뽑겠습니다. </p>
+      </div>
+    </div>
+    <p>         </p>
+    <p><strong>2. 게임</strong>.</p>
+    <div class="row">
+      <div class = "col">
+      	<p>- 자주 하지는 않습니다. 하지만 종종 서든어택을 즐깁니다(......)</p>
+      </div>
+    </div>
+     <p>         </p>
+    <p><strong>3. 헬스</strong>.</p>
+    <div class="row">
+      <div class = "col">
+      	<p>- 헬스를 즐기는 편입니다. 잘하지는 않습니다. 그래도 스트레스가 많이 풀려서 거르지 않으려고 노력합니다.</p>
+      </div>
+    </div>
+    <p>         </p>
+    <p><strong>4. 영화보기</strong>.</p>
+    <div class="row">
+      <div class = "col">
+      	<p>- 영화를 굉장히 좋아합니다. 장르를 웬만해서는 거르지 않고 다 보려고 합니다. 마블도 좋아하고 DC도 좋아합니다. 좋아하는 감독으로는 봉준호, 김지운, 크리스토퍼 놀란, 제임스 카메론, 멧 리브스 등이 있습니다.</p>
+      </div>
+    </div>
+    <p>         </p>
+    <p><strong>5. 축구보기</strong>.</p>
+    <div class="row">
+      <div class = "col">
+      	<p>- 축구도 굉장히 좋아합니다. 좋아하는 팀은 바르셀로나이고, 좋아하는 선수는 리오넬 메시입니다.</p>
+
+      </div>
+    </div>
+     <div class="row">
+      <div class = "col">
+      	<div class="card" style="width: 18rem;">
+  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20130525_143%2Fgd021001_1369452474943Adhz2_JPEG%2F%25B9%25D9%25B8%25A3%25BC%25BF%25B7%25CE%25B3%25AA_%25B8%25B6%25C5%25A9.JPG&type=sc960_832" class="card-img-top" alt="...">
+  <div class="card-body">
+  </div>
+</div>
+      </div>
+      <div class = "col">
+      	<div class="card" style="width: 18rem;">
+  <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTNfODUg%2FMDAxNjI4ODM4ODM4ODYy.mqwPTGlBgRyy-P12G67L5-zfLgPfXUAnGkOJ7vYMMn8g.qz4xRTSIf1wuZccg2pUWVPMI4lrWuOXcX6D-rcq_aS4g.PNG.cm3hairmode%2Fimage.png&type=sc960_832" class="card-img-top" alt="...">
+  <div class="card-body">
+
+  </div>
+</div>
+      </div>
+    </div>
+    <hr class="my-4">
+
+  <div class="container" id="containers">
+
+
+    <h2 class="mt-4">- 그 외</h2>
+ 
+  </div>
+
+  <div class="container themed-container">* SW역량을 키워보고자 이 과정에 지원하였습니다.</div>
+  <div class="container themed-container"><a href="https://velog.io/@jjh98" target="_top">* 벨로그 링크</a></div>
+  <div class="container-md themed-container"><a href="https://sugar-gasoline-6bc.notion.site/5-CNU-SW-4e9483cc637f4e82a12196e8f1a0ac7b" target="_top">* 황금비율조 대표 링크</a></div>
+  <div class="container-lg themed-container"><a href="https://github.com/CNU-Jiho-Jeong" target="_top">* 깃허브 링크</a></div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
