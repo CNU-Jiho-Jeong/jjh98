@@ -39,6 +39,7 @@
 
 
 ![image](https://user-images.githubusercontent.com/108641325/193193103-aadff017-6ba9-4ef5-ae96-7ca8bbbe95be.png)
+
 (정적 웹 호스팅 성공)
 
 
