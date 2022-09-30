@@ -34,9 +34,11 @@
 
 - 폴더 전송은 안된다. 때문에 새 폴더를 생성한 뒤 파일을 넣어주어야 한다.
 
-
+![image](https://user-images.githubusercontent.com/108641325/193193091-ab3ea624-cb1f-47a0-8fb0-2eb5b922504b.png)
 (버켓 -> 정적 웹사이트 호스팅)
 
+
+![image](https://user-images.githubusercontent.com/108641325/193193103-aadff017-6ba9-4ef5-ae96-7ca8bbbe95be.png)
 (정적 웹 호스팅 성공)
 
 
@@ -58,6 +60,8 @@
 
 - Server 탭에서 생성해야하고, 자신의 서버에 매칭되게 된다.
 
+
+![image](https://user-images.githubusercontent.com/108641325/193193126-2adf9a13-d2d8-495e-ac6e-97fe63daa080.png)
 (매칭됐다.)
 
 - HDD와 SSD의 고민.
@@ -70,11 +74,16 @@
    - 성능보다 용량의 중요도가 더 높은가? = HDD
    - 아카이브 스토리지에는 HDD가 더 적합하다. 많이 사용하지 않는 데이터를 적재해야하는 것이기 때문에 많은 용량이 필요하고, 성능이 엄청나게 좋을 이유가 없으며 저렴한 스토리지가 필요하다.
 
+
+![image](https://user-images.githubusercontent.com/108641325/193193153-71d17c11-1326-49e8-8ef9-7571e6b06fa5.png)
 (블록 스토리지를 무제한으로 생성할 수 있는 것은 아니다. 리눅스 서버에는 스토리지 15개를 추가할 수 있다.)
+
 
 ### 파일 시스템
 
 - 윈도우의 파일 시스템은 NTFS
+
+![image](https://user-images.githubusercontent.com/108641325/193193184-a13d5c6b-1f06-416c-9621-a7be1ebdc376.png)
 
 - 블록 시스템은 파일 시스템으로 포맷팅해서 사용한다.
 
@@ -103,9 +112,12 @@
 	 1) 고정 IP 하나씩 사용하기 : 부하 분산을 할 수는 있지만, 잘 안될 가능성이 있다. A서버의 이용자였는데 B서버로 이동하게 된다면 A서버에서 하던 작업내용을 잃어버릴 수 있다. 세션이 유지되지 않기 때문.
 	 2) 로드 밸런서 사용하기 :
 	 
+	 ![image](https://user-images.githubusercontent.com/108641325/193193215-ff89ca4c-1ec0-46f5-bee7-f6b62397dacc.png)
 	 
+	 ![image](https://user-images.githubusercontent.com/108641325/193193235-dff2c60d-57b0-4004-b701-a4e368ee1fce.png)
 	 
-	 
+	 ![image](https://user-images.githubusercontent.com/108641325/193193244-6b915e40-1fbb-43d6-a8b7-7afbe0c2d119.png)
+
 	 
 	 - 로드밸런서를 사용한다면, 굳이 공인 IP를 사용할 필요가 없다. 로드밸런서는 비공인 IP로 접속을 하기 때문.
 	 
