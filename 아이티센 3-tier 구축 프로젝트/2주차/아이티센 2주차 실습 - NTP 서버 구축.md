@@ -90,3 +90,32 @@
 ![image](https://user-images.githubusercontent.com/108641325/193717884-a2454e00-3978-4843-a655-960d8937149b.png)
 
 (localhost를 사용)
+
+---
+
+(추가)
+
+10. 클라이언트 설정
+
+- 타임 서버 구축이 끝났으니, 이제 해당 서버와 시간을 동기화할 클라이언트 서버 의 차례이다.
+타임 서버 와 마찬가지로 ntp 를 설치해주고, /etc/ntp.conf 의 server 에 시간 정보를 받아올
+타임 서버의 주소 를 추가한 뒤 방화벽 설정 을 해주면 끝이다.
+타임 서버 의 restrict 가 잘 설정되어 있다면 금세 연동이 되어 시간이 동기화될 것이다.
+
+![image](https://user-images.githubusercontent.com/108641325/193741914-522bbcbc-f398-4159-a02f-80d86b37a0b7.png)
+
+![image](https://user-images.githubusercontent.com/108641325/193741948-24c931ad-fbb6-482b-8e28-f0027c29b74d.png)
+
+![image](https://user-images.githubusercontent.com/108641325/193741989-207473a2-253a-4b8a-ba5e-419480355658.png)
+
+![image](https://user-images.githubusercontent.com/108641325/193742029-9ac10ca6-25ff-4e4a-83e2-8af52d658c58.png)
+
+![image](https://user-images.githubusercontent.com/108641325/193742082-01e930a1-49da-48e5-a6c6-a72b29fd0fae.png)
+
+- 본래 연결이 제대로 됐다면 sync하고 있는 ntp서버를 의미하는 remote 필드의 주소 앞에 *
+(현재 동기화 중인 NTP서버라는 의미) 가 표시됐을 것이다. 그러나 여러 방법을 시도해봤음에도 클라
+이언트 서버 를 타임 서버 에 동기화하여 연결 시도하는 것에 실패했다.
+이는 네트워크 상의 문제로 클라이언트 서버 가 NTP 타임 서버 와 sync 되지 않은 것으로 추측되며
+추후 추가 학습을 진행하며 해결해보고 싶은 오류이다.
+
+
