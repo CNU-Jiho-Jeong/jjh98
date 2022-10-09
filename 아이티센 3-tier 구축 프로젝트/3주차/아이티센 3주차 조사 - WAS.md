@@ -16,6 +16,9 @@
 
 - **Web Server 와 WAS**
 
+![image](https://user-images.githubusercontent.com/108641325/194743400-4a875fc7-fccd-4542-b71e-1ef327d1e1ff.png)
+
+
 **1. Web Server**
 	
 	- 개념이 하드웨어적 관점과 소프트웨어적 관점으로 구분된다.
@@ -40,38 +43,43 @@
 	
 	-> 그렇기에 트래픽이 점차 많아지는 경우, 정적인 요청은 Web Server 가 처리하도록 하여 트래픽을 분산시키는 것이다.
 
-	- **Web Server 와 WAS 를 분리할 시 생기는 장점**
+	- Web Server 와 WAS 를 분리할 시 생기는 장점
 		1) 서버 부하 방지
 		
- 		- Web Server 를 두는 가장 큰 이유이다. 정적인 요청은 Web Server 가 처리하도록 하여 WAS 는 동적인 요청만 처리할 수 있도록 하면 서버 부하를 방지할 수 있다.
+		 - Web Server 를 두는 가장 큰 이유이다. 정적인 요청은 Web Server 가 처리하도록 하여 WAS 는 동적인 요청만 처리할 수 있도록 하면 서버 부하를 방지할 수 있다.
 
 		2) 보안 강화
 		
-		- Web Server 와 WAS 는 포트 번호가 서로 다르다(Web Server 는 표준 HTTP 포트가 80, WAS 는 표준 HTTP 포트가 8080). 그렇기에 이 두 개를 분리하여 사용하면 보안을 강화시켜 줄 수 있다.
+		 - Web Server 와 WAS 는 포트 번호가 서로 다르다(Web Server 는 표준 HTTP 포트가 80, WAS 는 표준 HTTP 포트가 8080). 그렇기에 이 두 개를 분리하여 사용하면 보안을 강화시켜 줄 수 있다.
 
 		3) 여러 대의 WAS 를 연결 가능
 		
-		- Web Server 와 WAS 를 분리하여 사용하면, Web Server 하나에 여러대의 WAS 를 설치하고 로드밸런싱을 하여 각 WAS 의 부하를 더 낮춰줄 수 있다(로드밸런싱, 말 그대로 Load, 즉 요청을 여러 개로 나누어 처리하는 것). 또한 여러대의 WAS 연결을 위해 Web Server 를 사용하면 fail over, fail back 처리에 더 유리해진다.
- 
-		- fail over
+		 - Web Server 와 WAS 를 분리하여 사용하면, Web Server 하나에 여러대의 WAS 를 설치하고 로드밸런싱을 하여 각 WAS 의 부하를 더 낮춰줄 수 있다(로드밸런싱, 말 그대로 Load, 즉 요청을 여러 개로 나누어 처리하는 것). 또한 여러대의 WAS 연결을 위해 Web Server 를 사용하면 fail over, fail back 처리에 더 유리해진다.
+ 
+		 - fail over
 		
-		: 장애 조치 기능. 서버나 네트워크 등에서 이상이 생겼을 때 예비시스템으로 자동 전환되는 기능이다.
+		 : 장애 조치 기능. 서버나 네트워크 등에서 이상이 생겼을 때 예비시스템으로 자동 전환되는 기능이다.
 		
-		: 평상시에 A 장비를 사용(active)하다 A 장비에 장애(fail)가 발생하면 준비했던(passive) B 장비를 사용하는 것이다.
+		 : 평상시에 A 장비를 사용(active)하다 A 장비에 장애(fail)가 발생하면 준비했던(passive) B 장비를 사용하는 것이다.
 		
- 		- fail back
+ 		 - fail back
 
-		: fail over 에 따라 전환된 서버, 시스템, 네트워크 등을 이상이 발생하기 전의 상태로 되돌리는 처리. 
+		 : fail over 에 따라 전환된 서버, 시스템, 네트워크 등을 이상이 발생하기 전의 상태로 되돌리는 처리.
+		 
+		 ![image](https://user-images.githubusercontent.com/108641325/194743408-dd1e8036-4189-459c-9c53-e5d816cacd57.png)
+
 		
 		- 쉽게 생각하면, 장비를 여러 대 둘 수 있게 하여 장애를 대비하는 것이다.
 
 		4) 여러 웹 어플리케이션 서비스 가능
 
-		- 예를 들어, 하나의 서버에서 PHP Application 과 Java Application 을 함께 사용하는 경우, 자원 이용의 효율성 및 장애 극복, 배포 및 유지보수의 편의성을 위해 Web Server 와 WAS 를 분리한다.
+		 - 예를 들어, 하나의 서버에서 PHP Application 과 Java Application 을 함께 사용하는 경우, 자원 이용의 효율성 및 장애 극복, 배포 및 유지보수의 편의성을 위해 Web Server 와 WAS 를 분리한다.
 
 		5) 접근 허용 IP 관리도 Web Server 에서 처리하면 효율적이다.
 
-	- **WAS 작동 프로세스**
+	- WAS 작동 프로세스
+	
+	![image](https://user-images.githubusercontent.com/108641325/194743413-12c426b8-48b0-4c9f-b9f3-6f924688e085.png)
 	
 	1) 웹 서버로 부터 요청이 들어오면 제일 먼저 컨테이너가 이를 알맞게 처리한다.
 	
@@ -99,6 +107,8 @@
 
 #### 1. Tomcat(톰캣)
 
+![image](https://user-images.githubusercontent.com/108641325/194743420-39de36b3-58c6-4926-baa8-a07074904a08.png)
+
 - 사전적 의미로 '수고양이'를 뜻한다. 
 
 - 아파치 소프트웨어 재단에서 개발한 WAS.
@@ -121,6 +131,8 @@
 
 #### 2. GlassFish(글래스피쉬)
 
+![image](https://user-images.githubusercontent.com/108641325/194743426-c583a018-1f7b-4c9b-b8dc-a2880130ba96.png)
+
 - **자카르타 EE 기반** WAS
 
   - 자카르타 EE (Jakarta Enterprise Edition): 이전 명칭은 자바 플랫폼. 자바를 이용한 서버측 개발을 위한 플랫폼이다. 구체적으로 말하면 WAS에서 동작하는 **장애 복구 및 분산 멀티티어를 제공하는 자바 소프트웨어의 기능을 추가한 서버를 위한 플랫폼**이다.
@@ -140,6 +152,10 @@
 - 원격 보안 취약으로 인해, HTTP를 통해서 네트워크 액세스 권한이 없는 공격자가 글래스피쉬를 손상시킬 수 있다는 취약점이 제기되었음. 그래서 대응 방안으로 지속적인 업데이트를 제시하였음. 
 
 #### 3. JBoss(제이보스)
+
+![image](https://user-images.githubusercontent.com/108641325/194743432-6aceca86-c1b9-4280-b28d-338c4512a8a6.png)
+
+![image](https://user-images.githubusercontent.com/108641325/194743437-98bf8ec3-4592-41b4-8b0c-3ba1cb198715.png)
 
 - 2006년에 JBoss 프로젝트의 운영이 Red Hat에 인수되었음.
 
@@ -173,6 +189,9 @@
     - EJB(Enterprise JAVA Bean): 썬 마이크로시스템즈가 기업 환경 개발을 단순화하기 위해 제창한 규약. 즉, 애플리케이션의 업무 로직을 가지고 있는 서버 애플리케이션이다.
 	
     - 클러스터링: 클러스터는 여러개의 시스템이 하나의 거대한 시스템으로 보이게 만드는 기술. 디스크 공간 같은 하드웨어 자원을 공유할 수 있고, 여러 사용자에게 컴퓨팅 자원을 제공할 수 있다. 그래서 부하를 조정할 수 있고, 가용성이 높은 시스템을 구축할 수 있다. 
+    
+    ![image](https://user-images.githubusercontent.com/108641325/194743451-9eca8b6a-e3d4-453f-b01c-0f717557732b.png)
+
   
 # 3. 상용 소프트웨어
 
