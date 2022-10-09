@@ -81,7 +81,15 @@ WWW 나 W3 라고 부르기도 하지만, Web이라는 말로 가장 많이 부�
 
 - 이와 대비되는 개념으로 정적 컨텐츠가 있는데 동적 컨텐츠보다 더 빠르게 동작하고 쉽게 캐시될 수 있지만, 반환되는 컨텐츠의 내용이 동일하다는 점이 다르다.
 
+![image](https://user-images.githubusercontent.com/108641325/194742613-2f25d07e-7d4b-423c-bfaa-b3d852aa426f.png)
+
+![image](https://user-images.githubusercontent.com/108641325/194742619-632f1edd-92c7-48d0-8e9c-53c2f08e7a8f.png)
+
+
 ### 4. 웹의 기술
+
+![image](https://user-images.githubusercontent.com/108641325/194742621-78d1e72c-fbda-493b-8761-580552ba64cd.png)
+
 
 **프로토콜과 표준**
 
@@ -183,6 +191,9 @@ WWW 나 W3 라고 부르기도 하지만, Web이라는 말로 가장 많이 부�
 
 - 단일 서버에서도 동시에 많은 연결을 처리할 수 있다.
 
+![image](https://user-images.githubusercontent.com/108641325/194742670-aa8506fb-be71-4cdb-8cee-bc655820c4f0.png)
+
+
 2. SSL 지원 및 SNI 기능 지원
 
 - 예전 웹 서버 같은 경우 1개의 IP에는 1개의 도메인의 SSL 인증서만 적용해야 됐으며, 1개의 IP에 여러 개의 도메인 인증서로 적용하려면 몇 배 더 비싼 멀티 인증서로 적용해야 했다.
@@ -192,6 +203,9 @@ WWW 나 W3 라고 부르기도 하지만, Web이라는 말로 가장 많이 부�
 3. FastCGI / SCGI 지원
 
 - FastCGI /SCGI 를 기능을 통해 웹서버와 WAS를 분리하여 서버의 부하를 방지하고 물리적으로 분리하여 보안을 강화 할 수 있다.
+
+![image](https://user-images.githubusercontent.com/108641325/194742689-ad03d7ed-1824-49ce-b5cd-8ec6b4e2f47a.png)
+
 
 - FastCGI : 기본 웹 서버 모듈의 일부 성능 특성을 CGI(Common Gateway Iterface). 프로그래밍 인터페이스의 웹 서버 독립성과 결합하는 웹 서버와 애플리케이션 간의 인터페이스. 언어에 독립적이고, 확장가능한 아키텍쳐인 CGI에 대한 개방형 확장.
 
@@ -232,6 +246,9 @@ WWW 나 W3 라고 부르기도 하지만, Web이라는 말로 가장 많이 부�
 
 - 이 문제들은 킵얼라이브(Keep Alive)를 활성화함으로 해결할 수 있지만, 대량 접속 시 효율이 급격히 떨어지는 문제점이 발생한다.
 
+![image](https://user-images.githubusercontent.com/108641325/194742709-cba3288f-a403-4386-922a-f45e0b3f7925.png)
+
+
 #### 3. 라이티(혹은 라이티피디)
 
 - Lighttpd : `Light`와 `httpd`를 합친 말이지만, 웹 서버가 가진 속도, 유연성, 안정성을 표현하기 위해 '라이티'라고 발음한다.
@@ -253,6 +270,9 @@ WWW 나 W3 라고 부르기도 하지만, Web이라는 말로 가장 많이 부�
 - SNI 지원이 있는 SSL/TLS
 
 - 유연한 가상 호스팅과 모듈 지원.
+
+![image](https://user-images.githubusercontent.com/108641325/194742716-f33dde1e-89a5-4e97-8b01-b680ba745c0b.png)
+
 
 #### 4. 하와이타
 
@@ -278,6 +298,9 @@ WWW 나 W3 라고 부르기도 하지만, Web이라는 말로 가장 많이 부�
 
 - SSL 및 TLS 지원
 
+![image](https://user-images.githubusercontent.com/108641325/194742722-bb2cfb20-fe96-4f10-8565-669c9131bfd1.png)
+
+
 #### 5. 체로키
 
 - Cherokee는 2001년 아카마이 테크놀리지의 엔지니어링 총괄 `알바로 로페즈 오르테가`가 개발하였다. 오르테가는 모듈식 경량 설계 안에 속도와 기능성을 취합하고 싶어 했다.
@@ -299,6 +322,9 @@ WWW 나 W3 라고 부르기도 하지만, Web이라는 말로 가장 많이 부�
 - 리버스 HTTP 프록시
 
 - FastCGI 및 SCGI
+
+![image](https://user-images.githubusercontent.com/108641325/194742728-6ca94311-cfaa-4d99-bccc-789d7170343b.png)
+
 
 #### 6. 몽키 HTTP 서버
 
