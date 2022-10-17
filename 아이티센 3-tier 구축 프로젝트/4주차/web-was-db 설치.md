@@ -436,3 +436,32 @@
 
 ## 4. ncloud의 CDB for MySQL 사용해보기
 
+![image](https://user-images.githubusercontent.com/108641325/196220966-0de4bf5f-25e0-4b69-9a2e-1c719cccce8e.png)
+
+---
+
+- DB 서버를 생성하자
+![image](https://user-images.githubusercontent.com/108641325/196221017-55c50b70-4c98-4a65-b83f-10e30a1a838b.png)
+
+(VPC는 앞에 만들어놓았던 user07로, Subnet도 user07의 DB용 서버에 연결해준다.)
+
+(서버 이름과 서비스 이름은 적당히 해준다.)
+
+---
+
+![image](https://user-images.githubusercontent.com/108641325/196221235-83237ea6-ec50-4186-8ba0-8cc74faf3dc8.png)
+
+- 실제로 DB접속 정보와 DB를 구성하는 정보를 입력하는 페이지.
+- User_ID는 DB에 접속할때 사용하는 ID,
+- HOST(IP)는 DB에 접속 허용할 IP를 정하는 옵션이다. 여기서는 모든 IP를 허용하기 위해 '%' 를 입력했다.(좋은 방법은 아니다. 실제에서는 최소한의 권한을 주기위해 WAS IP대역을 주는 것을 권장하지만, 연습이니까..)
+- USER 암호는 접속 암호다. 적당히 만들고 반드시 기억해주자.
+- 기본 DB명은 최초에 생성할 DB명이다.
+
+---
+
+![image](https://user-images.githubusercontent.com/108641325/196221418-38c5436c-c7f1-40f1-a2ab-cc1aea719581.png)
+
+- Master와 Standby Master으로 구성된 것을 볼 수 있는데, 마스터로 기존 운영하다, 장애 발생 시 자동으로 Standby Master로 교체된다고 한다. 서비스 자체에서 이중화와 fail over 기능을 제공하는 셈.
+
+---
+---
