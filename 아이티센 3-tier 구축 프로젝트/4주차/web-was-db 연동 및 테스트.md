@@ -82,7 +82,39 @@
 
 ---
 
+**4. git에서 파일 내려받기**
 
+- git에서 이전에 작성해놓은 프로그램을 다운받는다.
+
+  > git clone (git URL)
+
+![image](https://user-images.githubusercontent.com/108641325/196687145-29bab7fa-61a5-46bb-be87-e9cbaf27e075.png)
+
+---
+
+- git에서 내려받은 폴더
+
+![image](https://user-images.githubusercontent.com/108641325/196687279-b04c2ad7-8dfa-4fcf-9348-0a9c381e9782.png)
+
+![image](https://user-images.githubusercontent.com/108641325/196687297-8be14913-ac2e-484a-a1e4-8ec930331d5c.png)
+
+---
+
+- gc-coffee는 스프링, kdt-react-order-ui가 리액트다.
+
+![image](https://user-images.githubusercontent.com/108641325/196687701-42c3ce33-7abb-4ded-a278-ce0ece369c4a.png)
+
+---
+
+- npm start로 리액트를 시작해준다.
+
+![image](https://user-images.githubusercontent.com/108641325/196687839-d479a405-9989-40a9-b2ab-274d3f16ddb9.png)
+
+---
+
+- 컴파일 오류가 발생한다.
+
+=> App.js 라는 파일에 문제가 있는 것 같다. 수정해서 실행해보자.
 
 
 
