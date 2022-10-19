@@ -86,6 +86,8 @@
 
 - git에서 이전에 작성해놓은 프로그램을 다운받는다.
 
+출처: https://github.com/jaestury/react-springboot-rest-api (제 깃허브가 아닌 팀원분 깃허브 링크입니다.)
+
   > git clone (git URL)
 
 ![image](https://user-images.githubusercontent.com/108641325/196687145-29bab7fa-61a5-46bb-be87-e9cbaf27e075.png)
@@ -110,14 +112,126 @@
 
 ![image](https://user-images.githubusercontent.com/108641325/196687839-d479a405-9989-40a9-b2ab-274d3f16ddb9.png)
 
+  - 컴파일 오류가 발생한다.
+
+  => App.js 라는 파일에 문제가 있는 것 같다. 수정해서 실행해보자.
+
 ---
 
-- 컴파일 오류가 발생한다.
+![image](https://user-images.githubusercontent.com/108641325/196689083-2e804594-8d12-4e08-b909-54de924c0ca3.png)
 
-=> App.js 라는 파일에 문제가 있는 것 같다. 수정해서 실행해보자.
+- 리액트 컴파일 성공!
+- 이제 접속해보자. 공인IP:3000으로 창을 띄워보자.
+- 접속이 안된다. 당연한 일이다. 3000번 포트를 뚫어놓지 않았기 때문이다.
+- ACG 설정으로 가서 포트 설정을 해주자.
+
+![image](https://user-images.githubusercontent.com/108641325/196689558-a6f8e2fe-20f7-40dc-a513-43589298514b.png)
+
+![image](https://user-images.githubusercontent.com/108641325/196689595-639c8f89-99bc-492e-bf3d-0aad19c4455a.png)
+
+- 공인IP:3000로 nginx 서버에서 잘 출력된다. 
+
+---
+
+- nginx를 proxy로 사용해서 리액트를 출력해보도록 하자.
+
+![image](https://user-images.githubusercontent.com/108641325/196689981-d83b6b17-2de7-412c-91e4-4328ac855171.png)
+  - vi /etc/nginx/conf.d/default.conf을 조금 만져주자.
+  - location을 바꾼다.
+  - proxy_pass를 localhost:3000으로 바꿔서 nginx에 리액트 프로그램을 얹어 실행할 수 있다.
+
+---
+
+![image](https://user-images.githubusercontent.com/108641325/196690423-759ceb1e-8db6-4b42-8926-232b66adc48a.png)
+
+- 3000번 포트를 삭제해도 공인IP:80로 리액트를 띄울 수 있다.
+
+---
+---
+
+
+## 2. WAS(JBoss)-DB(CDB for MySQL) 도킹
+
+- WAS 서버에 접속해서 MySQL을 설치하자.
+
+![image](https://user-images.githubusercontent.com/108641325/196690778-ce296558-2af6-4d8e-b0c7-22ee379b06b8.png)
+
+![image](https://user-images.githubusercontent.com/108641325/196690826-6b52b7ee-9c10-46f5-a778-d28bb4368f71.png)
+
+![image](https://user-images.githubusercontent.com/108641325/196690849-dfacaac0-7fba-44e8-a484-b5e9491f4f55.png)
+
+![image](https://user-images.githubusercontent.com/108641325/196690895-5cbb8ff6-3563-4f1d-bca3-2c95977631e4.png)
+
+---
+
+- 명령어 예시를 입력하여 DB 서버에 접속해주자.
+
+![image](https://user-images.githubusercontent.com/108641325/196691101-e35a0e51-99f7-4bbe-8e32-25d5ff731006.png)
+
+![image](https://user-images.githubusercontent.com/108641325/196691128-de3f25c0-6e52-4f2a-9a27-82294e17d9c3.png)
+
+![image](https://user-images.githubusercontent.com/108641325/196691147-8d5491ba-5650-496d-8204-5096201b6176.png)
+
+- WAS서버에서 DB서버에 접속한 후 테이블을 생성해봤다.
+
+---
+
+### WAS에서 서비스 띄워보기
+
+- 준비: maven, spring boot
+
+---
+
+**1. Maven 설치**
+
+- yum install maven
+
+![image](https://user-images.githubusercontent.com/108641325/196691680-37af06ce-61de-4db5-a3e0-a2e31a6e661a.png)
+
+mvn -version으로 설치 확인이 가능하다.
+
+![image](https://user-images.githubusercontent.com/108641325/196691734-ae7b2316-4ec4-4fc0-9dac-2baf674cf2e7.png)
+
+---
+
+- git clone으로 WAS 서버에도 폴더를 내려 받는다.
+
+![image](https://user-images.githubusercontent.com/108641325/196692801-585eadb7-3927-41ec-9ff6-6e9615be3d76.png)
+
+- 여기서는 pom.xml 파일에서 Java 버전을 맞춰줘야 한다.
+- mvn package로 target 폴더를 생성한다.
+
+---
+
+![image](https://user-images.githubusercontent.com/108641325/196693074-832f3cb3-5119-468e-b13a-23a4860e60ec.png)
+
+- 빌드가 성공하면 gc-coffee-0.0.1-SNAPSHOT.jar 가 생성된다.
+- java -jar gc-coffee-0.0.1-SNAPSHOT.jar 명령어를 통해 실행해준다.
+
+---
+
+![image](https://user-images.githubusercontent.com/108641325/196693276-b21fb85a-f948-4998-9585-bceca5007ccf.png)
+
+- MySQL 서버에 접속할 수 있는 권한이 없다는 메시지가 나온다.
+- MySQL 사용자를 추가해서 해결할 수 있다.
+
+---
+
+![image](https://user-images.githubusercontent.com/108641325/196693360-e6bb993d-a50c-4da6-bac7-e1e7ac388381.png)
+
+- Root 사용자를 추가하였고, 외부에서도 MySQL 접속이 가능하게 되었다.
+
+---
+
+![image](https://user-images.githubusercontent.com/108641325/196693447-23d54bfb-a170-4ba8-8a2d-eefc2f88e1f4.png)
+
+- 빌드가 성공한 모습이다.
+
+---
+
+능력부족으로 실패했습니다.
+WAS와 Web서버를 연결해서 웹에서 보내는 데이터를 WAS가 DB에게 전달해 저장하는 모습을 보고 싶었는데, 거기까지는 하지 못했습니다.
 
 
 
 
-
-## 2. 
