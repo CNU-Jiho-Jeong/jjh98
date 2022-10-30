@@ -61,6 +61,8 @@
 <img src="https://user-images.githubusercontent.com/108641325/198880100-a662670e-9be8-4293-96f6-855571f33777.png"/>
 </p>
 
+---
+
 #### 알고리즘 모임 깃허브 레포지토리 링크
 https://github.com/suran-kim/CNU-gorithm
 
