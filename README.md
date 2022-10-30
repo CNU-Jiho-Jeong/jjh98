@@ -27,8 +27,12 @@
 
  <img src="https://user-images.githubusercontent.com/108641325/198879429-593a6447-8afd-4d79-98f9-5a629e15304a.png"/>
  
+ <img src="https://user-images.githubusercontent.com/108641325/198880071-cc2e38cb-bc21-475f-a372-a2de20d03eb5.png"/>
+ <img src="https://user-images.githubusercontent.com/108641325/198880076-6f896ef2-431b-4161-b0b7-561048a2c762.png"/>
+ <img src="https://user-images.githubusercontent.com/108641325/198880087-c4bd981d-3d9a-4dcc-9a05-64b5454a7b85.png"/>
 </p>
 
+---
 
 ## 카.공 프로젝트
 
@@ -38,16 +42,24 @@
  <img src="https://user-images.githubusercontent.com/108641325/198879764-ca75abd7-5fa3-416e-aad7-b65ed95d36c3.png"/>
 </p>
 
+---
 
 ## 아이티센 3-Tier 구축 프로젝트
 
-![image](https://user-images.githubusercontent.com/108641325/198879720-9f98bb22-d853-4dda-a3a3-c83a6ca508be.png)
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/108641325/198879720-9f98bb22-d853-4dda-a3a3-c83a6ca508be.png"/>
+ <img src="https://user-images.githubusercontent.com/108641325/198880095-66135a6c-a7e2-41ea-8f89-eaa75c2b12ee.png"/>
+ <img src="https://user-images.githubusercontent.com/108641325/198880096-638b4ff0-06c2-43b3-a62e-2f7b1c81e05b.png"/>
+</p>
 
+---
 
 ## 알고리즘 대회
 
-![image](https://user-images.githubusercontent.com/108641325/198879884-80333cba-19c5-4a19-a414-eebe220b2992.png)
-
+<p align="center"> 
+ <img src="https://user-images.githubusercontent.com/108641325/198879884-80333cba-19c5-4a19-a414-eebe220b2992.png"/>
+<img src="https://user-images.githubusercontent.com/108641325/198880100-a662670e-9be8-4293-96f6-855571f33777.png"/>
+</p>
 
 #### 알고리즘 모임 깃허브 레포지토리 링크
 https://github.com/suran-kim/CNU-gorithm
