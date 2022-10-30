@@ -44,6 +44,11 @@
 ![image](https://user-images.githubusercontent.com/108641325/198879720-9f98bb22-d853-4dda-a3a3-c83a6ca508be.png)
 
 
+## 알고리즘 대회
+
+![image](https://user-images.githubusercontent.com/108641325/198879884-80333cba-19c5-4a19-a414-eebe220b2992.png)
+
+
 #### 알고리즘 모임 깃허브 레포지토리 링크
 https://github.com/suran-kim/CNU-gorithm
 
