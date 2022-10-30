@@ -73,7 +73,13 @@
 
 ## 프로그래머스 과제(1~7주차)
 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/108641325/198880582-bc1ed603-1bf5-49c2-92e3-39c312a31de4.png"/>
+ <img src="https://user-images.githubusercontent.com/108641325/198880583-add29c4c-74ee-414a-b5ad-8089c0624a5c.png"/>
+ <img src="https://user-images.githubusercontent.com/108641325/198880588-9c6cffe1-074e-4a17-86f1-405753e88c9d.png"/>
+</p>
 
+---
 
 #### 알고리즘 모임 깃허브 레포지토리 링크
 https://github.com/suran-kim/CNU-gorithm
